@@ -29,7 +29,7 @@ def sieve_of_eratosthenes_optimized(limit):
     output[0] = False
     output[1] = False
 
-    for i in range(2, math.floor(math.sqrt(limit))):
+    for i in range(2, math.floor(math.sqrt(limit)) + 1):
         if output[i]:
             j = i ** 2
             while j <= limit:
